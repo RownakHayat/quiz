@@ -1,0 +1,20 @@
+.topics-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.topic-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 50px 163px
+}
+
+@media screen and (max-width:1100px) {
+    .topics-container{
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+    }
+    .topic-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
