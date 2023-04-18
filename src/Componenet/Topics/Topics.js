@@ -13,7 +13,6 @@ const Topics = () => {
         <div className='topics-container'>
             <div className="topic-container">
                 {
-
                     topics.map (topic => <Topic
                     key= {topic.id}
                     topic = {topic}

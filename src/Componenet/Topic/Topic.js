@@ -2,13 +2,14 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import './Topic.css'
+import { Button } from 'react-bootstrap';
 const Topic = (props) => {
     
     const {id, name, logo, total} = props.topic;
     const navigate = useNavigate()
     const quizHandle = ()=>{
         navigate(`/quiz/${id}`)
-        // console.log(quizHandle)
+        console.log(quizHandle)
     }
     return (
         <div className='topic'>
@@ -17,7 +18,7 @@ const Topic = (props) => {
             <p className='topic-name'>{name}</p>
             <div className='d-flex justify-content-between align-items-center'>
                 <span className='fw-bold'>Quiz Total:{total}</span>
-            <button onClick={quizHandle} className='btn-topic'>Quiz Start </button>
+            <Button onClick={quizHandle} className='btn-topic'>Quiz Start</Button> 
             </div>
             </div>
         </div>
