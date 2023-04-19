@@ -5,7 +5,7 @@ import { Button, Form } from 'react-bootstrap';
 
 
 
-const Quiz = ({quiz, scroe, setScore}) => {
+const Quiz = ({quiz, score, setScore}) => {
     const {question, options, correctAnswer} = quiz;
     const [check, setCheck] = useState('');
     const  [disable, setDisable] = useState('');
@@ -15,7 +15,7 @@ const Quiz = ({quiz, scroe, setScore}) => {
     const correctanswer = ()=>{
 
         if (check === correctAnswer){
-            setScore(scroe + 1);
+            setScore(score + 1);
             setDisable(true);
             setMessage(<small className='text-warning fw-bold mb-3'>Correct Answer</small>)
         }
@@ -46,7 +46,7 @@ const Quiz = ({quiz, scroe, setScore}) => {
                     )
            }
            <div className='text-end'>
-            <Button variant='primary' onClick={correctanswer} disabled={disable}></Button>
+            <Button variant='primary' onClick={correctanswer} disabled={disable}>Submit</Button>
            </div>
                 {
                     message

@@ -9,7 +9,7 @@ const Topic = (props) => {
     const navigate = useNavigate()
     const quizHandle = ()=>{
         navigate(`/quiz/${id}`)
-        console.log(quizHandle)
+       
     }
     return (
         <div className='topic'>
