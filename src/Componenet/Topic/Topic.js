@@ -7,7 +7,7 @@ const Topic = (topic) => {
     
     const {id, name, logo, total} = topic;
     console.log(topic)
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const quizHandle = ()=>{
         navigate(`/quiz/${id}`)
        

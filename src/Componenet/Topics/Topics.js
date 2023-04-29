@@ -15,9 +15,9 @@ const Topics = () => {
         <div className='topics-container'>
             <div className="topic-container">
                 {
-                    topics.map (topic => <Topic
-                    key= {topic.id}
-                    topic = {topic}
+                   Object.entries(topics.data).map (topic => <Topic
+                    key= {topic[1].id}
+                    topic = {topic[1]}
                     ></Topic> 
                     )
                 }

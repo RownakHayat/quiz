@@ -17,12 +17,12 @@ function App() {
         {
           path: '/',
           element: <Topics></Topics>,
-          loader: ()=> fetch('topics.json')
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz')
         },
         {
           path: '/topics',
           element: <Topics></Topics>,
-          loader: ()=> fetch('topics.json')
+          loader: ()=> fetch('https://openapi.programming-hero.com/api/quiz')
         },
         {
           path: '/blog',
@@ -32,7 +32,7 @@ function App() {
         {
           path: '/statics',
           element: <Statics></Statics>,
-          loader:() => fetch('topics.json')
+          loader:() => fetch('https://openapi.programming-hero.com/api/quiz')
 
         },
 
