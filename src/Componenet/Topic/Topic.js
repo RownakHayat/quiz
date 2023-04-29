@@ -3,9 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 import './Topic.css'
 import { Button } from 'react-bootstrap';
-const Topic = (props) => {
+const Topic = (topic) => {
     
-    const {id, name, logo, total} = props.topic;
+    const {id, name, logo, total} = topic;
+    console.log(topic)
     const navigate = useNavigate()
     const quizHandle = ()=>{
         navigate(`/quiz/${id}`)
