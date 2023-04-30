@@ -9,7 +9,7 @@ import './Topics.css';
 const Topics = () => {
    
    const topics = useLoaderData();
-   console.log(topics)
+   
 
     return (
         <div className='topics-container'>

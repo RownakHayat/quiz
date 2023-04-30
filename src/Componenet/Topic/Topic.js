@@ -2,17 +2,18 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 import './Topic.css'
-import { Button } from 'react-bootstrap';
+import { Button, Col } from 'react-bootstrap';
 const Topic = ({topic}) => {
     
     const {id, name, logo, total} = topic;
-    console.log(topic)
+    
     const navigate = useNavigate();
     const quizHandle = ()=>{
         navigate(`/quiz/${id}`)
        
     }
     return (
+        <Col>
         <div className='topic'>
             <img src={logo} alt=""></img>
             <div className='topic-info'>
@@ -23,6 +24,7 @@ const Topic = ({topic}) => {
             </div>
             </div>
         </div>
+        </Col>
     );
 };
 
