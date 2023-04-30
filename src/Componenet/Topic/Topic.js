@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 import './Topic.css'
 import { Button } from 'react-bootstrap';
-const Topic = (topic) => {
+const Topic = ({topic}) => {
     
     const {id, name, logo, total} = topic;
     console.log(topic)
