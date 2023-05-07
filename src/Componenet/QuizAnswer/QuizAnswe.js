@@ -22,12 +22,14 @@ const QuizAnswe = () => {
                 <Row>
                     <Col lg={12} md={12} sm={12}>
                         {
-                           (quizAnswer.data.questions).map(quiz => <Quiz
-                           key={quiz.id}
-                           quiz={quiz}
-                           score={score}
-                           setScore={setScore}
-                           ></Quiz>)
+                           quizAnswer?.data?.questions.map((quiz, index) => (
+                            <Quiz
+                                key={index}
+                                quiz={quiz}
+                                score={score}
+                                setScore={setScore}
+                           />
+                           ))
                         }
                     </Col>
                 </Row>

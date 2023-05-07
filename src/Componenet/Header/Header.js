@@ -13,7 +13,7 @@ const Header = () => {
                 <NavbarBrand href='#home'> Quiz</NavbarBrand>
                 <Navbar.Toggle aria-controls='responsive-navbar-nav' />
 
-                <NavbarCollapse>
+                <NavbarCollapse id='responsive-navbar-nav'>
                     <Nav className='ms-auto'>
                         <NavLink className=  {({isActive}) => isActive ? 'active' : undefined} className= 'text-decoration-none me-3 text-white' to='/topics' >Topics</NavLink>
                         <NavLink className='text-decoration-none me-3 text-white'  to='/statics'>Statics</NavLink>

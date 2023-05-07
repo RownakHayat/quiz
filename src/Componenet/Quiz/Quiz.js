@@ -33,16 +33,16 @@ const Quiz = ({quiz, score, setScore}) => {
         <div className='border border-1 w-lg-75 w-sm-100 m-auto p-5 mb-5 mt-5 rounded'>
             <h5 className='text-start mb-3'>{remove}</h5>
            {
-                options.map(option => 
+                options.map((option, index) => 
                     <Form.Check 
-                    key={option.id}
-                    className='d-flex justify-content-start mb-3 fw-bold text-success'
-                    label={option}
-                    value={option}
-                    name="group1"
-                    type={'radio'}
-                    onChange={(e) => setCheck(e.target.value)}
-                    />
+                        key={index}
+                        className='d-flex justify-content-start mb-3 fw-bold text-success'
+                        label={option}
+                        value={option}
+                        name="group1"
+                        type={'radio'}
+                        onChange={(e) => setCheck(e.target.value)}
+                        />
                     )
            }
            <div className='text-end'>
