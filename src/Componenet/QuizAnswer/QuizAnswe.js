@@ -9,7 +9,6 @@ import Quiz from '../Quiz/Quiz';
 const QuizAnswe = () => {
     const quizAnswer = useLoaderData();
     const {total, name} = quizAnswer.data;
-    console.log(quizAnswer);
     const [score, setScore] = useState(0);
 
     return (
